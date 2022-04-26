@@ -10,9 +10,3 @@ while True:
   distance = sensor.distance * 100
   print("Distance : %.1f" % distance)
   sleep(1)
-  
-  if distance <= 20:
-        red.on()
-  else:
-        red.off()
-        
