@@ -8,7 +8,7 @@ red = LED(17)
 
 while True:
   distance = sensor.distance * 100
-  print("Distance : %.1f" % distance
+  print("Distance : %.1f" % distance)
   sleep(1)
   
   if distance <= 20:
