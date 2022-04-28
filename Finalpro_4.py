@@ -17,7 +17,7 @@ while True:
   if distance <= 20:
         green.off()
         red.on()
-        #subprocess.run(['./sensorlog'])
+        #subprocess.run(['./sensorlog.sh'])
         
   else:
         green.on()
