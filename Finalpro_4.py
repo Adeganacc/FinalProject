@@ -8,7 +8,6 @@ sensor = DistanceSensor (echo=23, trigger=24, max_distance=2.0)
 red = LED(17)
 green = LED(27)
 
-subprocess.run(['touch /home/$USER/sensorlog.txt'])
 
 while True:
   distance = sensor.distance * 100
@@ -18,7 +17,7 @@ while True:
   if distance <= 20:
         green.off()
         red.on()
-        #subprocess.run(['date'])
+        #subprocess.run(['./sensorlog'])
         
   else:
         green.on()
