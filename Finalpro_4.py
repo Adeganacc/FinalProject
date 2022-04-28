@@ -16,7 +16,7 @@ while True:
   if distance <= 20:
         green.off()
         red.on()
-        #log activity
+        subprocess.run(['date >> /home/$USER/sensorlog.txt'])
   else:
         green.on()
         red.off()
