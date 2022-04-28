@@ -16,7 +16,10 @@ while True:
   if distance <= 20:
         green.off()
         red.on()
-        subprocess.run(['date >> /home/$USER/sensorlog.txt'])
+        #subprocess.run(['date >> /home/$USER/sensorlog.txt'])
+        with open("/home/$USER/sensorlog.txt", 'w') as logfile:
+          logfile.write(subprocess.run(date))
+        
   else:
         green.on()
         red.off()
