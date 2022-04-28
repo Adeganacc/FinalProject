@@ -2,6 +2,7 @@
 
 from gpiozero import DistanceSensor, LED
 from time import sleep
+import subprocess
 
 sensor = DistanceSensor (echo=23, trigger=24, max_distance=2.0)
 red = LED(17)
