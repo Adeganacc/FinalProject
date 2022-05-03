@@ -22,10 +22,10 @@ When there is nothing in the trigger range of the motion sensor a green LED will
 Stage 1: Turns on a distance sensor and prints out the distance.
   (4 Male-to-Female jumper wires, 1 330 Ohm resistor, 1 470 Ohm resistor, 1 Ulta-Sonic Distance Sensor)
 
-Stage 2: If the distance is greater or equal to 20cm the red LED will light up.
+Stage 2: If the distance is less than or equal to 20cm the red LED will light up.
   (Add on the red LED, 1 male-to-female jumper wire, 1 male-to-male jumper wire, and 1 220 Ohm resistor.)
   
 Stage 3: Same as stage 2 but a green LED will be lit if the sensor does not detect anything within 20cm.
   (Add on the green LED, 1 male-to-female jumper wire, 1 male-to-male jumper wire, and 1 220 Ohm resistor.)
   
-Stage 4: Print Time and Date in a log file in /home/$USER each time the sensor detects anyhting within 20cm.
+Stage 4: Print Time and Date in a log file in /home/$USER/sensorlog.txt each time the sensor detects anyhting within 20cm.
