@@ -17,7 +17,7 @@ Items needed
 Each time the motion sensor is triggered, a red LED will light up.
 When there is nothing in the trigger range of the motion sensor a green LED will be lit.
  
-  When I set out to make this device, the intended use case was to set up the device in a doorway of a room and log everytime the the sensor was tripped. The LEDs where added as a visual aid to quickly show whether or not the sensor has picked up anything. For stage 4; I was having trouble finding the proper syntax for python 3 to check in a file exists and write to it, or if it didn't exist have it create one then write to it. So I ended up writing a small bash script, 'sensorlog.sh', to preform that operation.
+  When I set out to make this device, the intended use case was to set up the device in a doorway of a room and log everytime the the sensor was tripped. The LEDs where added as a visual aid to quickly show whether or not the sensor has picked up anything. For stage 4; I was having trouble finding the proper syntax for python 3 to check if a file exists and write to it, or if it didn't exist have it create one then write to it. So I ended up writing a small bash script, 'sensorlog.sh', to preform that operation.
 
 Stage 1: Turns on a distance sensor and prints out the distance.
   (4 Male-to-Female jumper wires, 1 330 Ohm resistor, 1 470 Ohm resistor, 1 Ulta-Sonic Distance Sensor)
